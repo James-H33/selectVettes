@@ -2,15 +2,16 @@
 
 body
   overflow: hidden
+  font-family: 'Open Sans', sans-serif
 
 .nav-wrapper
-  width: 80%
+  width: 75%
   height: 100vh
   background: $menu-background
   position: absolute
   right: 0
   transform: translateX(100%)
-  transition: all 1s ease
+  transition: all .5s linear
 
 .nav-icon
   height: 30px
@@ -20,15 +21,15 @@ body
   left: -50px
   cursor: pointer
   transform: translateX(0)
-  transition: all 1.2s ease
+  transition: all 0.35s linear
 
 .nav-icon span
   width: 25px
-  height: 3px
+  height: 2px
   background: #ccc
   position: absolute
   right: 3px
-  transition: all 1s ease
+  transition: all 0.5s ease
 
   &:nth-child(1)
     top: 2px
@@ -56,11 +57,30 @@ body
   height: 100%
   color: #ccc
   display: flex
-  align-items: center
+  flex-direction: column
+  align-item: center
   justify-content: center
 
+
   h1
-    font-size: 30px
+    font-size: 2em
+    margin-left: 20px
+
+  h2
+    font-size: 1.2em
+    margin-left: 20px
+
+  h1,h2
+    font-weight: 300
+    padding: 10px 0
+
+    &:hover
+      color: $vette-red
+      text-shadow: 0 0 15px $vette-red
+
+  img
+    width: 200px
+    height: 200px
 
 
 // Jquery Classes
@@ -68,5 +88,19 @@ body
   transform: translateX(0)
 
 .icon-slide
-  transform: translateX(80vw)
-  transition: 1s all 1s ease
+  transform: translateX(75vw)
+  transition: 0.35s all .5s ease
+
+@media (min-width: 769px)
+  .icon-slide
+    transform: translateX(40vw)
+    transition: 0.35s all .5s
+
+  .nav-wrapper
+    width: 40%
+
+  .nav-display
+    h1
+      font-size: 3em
+    h2
+      font-size: 2em
