@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 
 
 app.use(bodyParser.urlencoded({extened: true}));
+app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');
 
 app.get('/', function(req, res) {
