@@ -2,15 +2,15 @@
   padding: 0;
   margin: 0; }
 
-body {
-  overflow: hidden;
+html, body {
+  overflow-x: hidden;
   font-family: "Open Sans", sans-serif; }
 
 .nav-wrapper {
   width: 75%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.85);
-  position: absolute;
+  position: fixed;
   right: 0;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
@@ -92,9 +92,6 @@ body {
     .nav-display h1:hover, .nav-display h2:hover {
       color: #ee3a43;
       text-shadow: 0 0 15px #ee3a43; }
-  .nav-display img {
-    width: 200px;
-    height: 200px; }
 
 .nav-slide {
   -webkit-transform: translateX(0);
