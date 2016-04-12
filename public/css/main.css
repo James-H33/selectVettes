@@ -9,7 +9,7 @@ html, body {
 .nav-wrapper {
   width: 75%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   right: 0;
   -webkit-transform: translateX(100%);
@@ -35,8 +35,8 @@ html, body {
   background: #ccc;
   position: absolute;
   right: 3px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease; }
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease; }
   .nav-icon span:nth-child(1) {
     top: 2px;
     -webkit-transform: rotate(0deg);
@@ -100,15 +100,15 @@ html, body {
 .icon-slide {
   -webkit-transform: translateX(75vw);
   transform: translateX(75vw);
-  -webkit-transition: 0.35s all 0.5s ease;
-  transition: 0.35s all 0.5s ease; }
+  -webkit-transition: 0.35s all 0.75s ease;
+  transition: 0.35s all 0.75s ease; }
 
 @media (min-width: 769px) {
   .icon-slide {
     -webkit-transform: translateX(40vw);
     transform: translateX(40vw);
-    -webkit-transition: 0.35s all 0.5s;
-    transition: 0.35s all 0.5s; }
+    -webkit-transition: 0.35s all 0.75s;
+    transition: 0.35s all 0.75s; }
 
   .nav-wrapper {
     width: 40%; }
@@ -129,7 +129,7 @@ html, body {
   width: 100%;
   height: 100%;
   color: #ccc;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,6 +156,14 @@ html, body {
   .index-intro-display p {
     font-size: 25px;
     text-shadow: 0px 5px 15px black; }
+
+.index-intro-emblem {
+  width: 250px;
+  height: 150px;
+  margin-top: -25px; }
+  .index-intro-emblem img {
+    width: 100%;
+    height: 100%; }
 
 @media (min-width: 769px) {
   .index-intro-display h1 {
