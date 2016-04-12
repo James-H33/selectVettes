@@ -1,14 +1,14 @@
 @import '../1-base/var'
 
-body
-  overflow: hidden
+html,body
+  overflow-x: hidden
   font-family: 'Open Sans', sans-serif
 
 .nav-wrapper
   width: 75%
   height: 100vh
   background: $menu-background
-  position: absolute
+  position: fixed
   right: 0
   transform: translateX(100%)
   transition: all .5s linear
@@ -77,10 +77,6 @@ body
     &:hover
       color: $vette-red
       text-shadow: 0 0 15px $vette-red
-
-  img
-    width: 200px
-    height: 200px
 
 
 // Jquery Classes
