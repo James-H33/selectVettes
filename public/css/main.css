@@ -26,8 +26,8 @@ html, body {
   cursor: pointer;
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  -webkit-transition: all 0.35s linear;
-  transition: all 0.35s linear; }
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear; }
 
 .nav-icon span {
   width: 25px;
@@ -35,8 +35,8 @@ html, body {
   background: #ccc;
   position: absolute;
   right: 3px;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease; }
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .nav-icon span:nth-child(1) {
     top: 2px;
     -webkit-transform: rotate(0deg);
@@ -100,15 +100,15 @@ html, body {
 .icon-slide {
   -webkit-transform: translateX(75vw);
   transform: translateX(75vw);
-  -webkit-transition: 0.35s all 0.75s ease;
-  transition: 0.35s all 0.75s ease; }
+  -webkit-transition: 0.3s all 0.6s ease;
+  transition: 0.3s all 0.6s ease; }
 
 @media (min-width: 769px) {
   .icon-slide {
     -webkit-transform: translateX(40vw);
     transform: translateX(40vw);
-    -webkit-transition: 0.35s all 0.75s;
-    transition: 0.35s all 0.75s; }
+    -webkit-transition: 0.3s all 0.6s;
+    transition: 0.3s all 0.6s; }
 
   .nav-wrapper {
     width: 40%; }
