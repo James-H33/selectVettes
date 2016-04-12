@@ -148,8 +148,25 @@ html, body {
   -ms-flex-align: center;
   align-items: center; }
   .index-intro-display h1 {
-    font-size: 40px;
+    color: #ee3a43;
+    font-size: 2.5em;
     margin-bottom: -10px;
-    text-shadow: 0 5px 5px black; }
+    -webkit-animation: neon 2s ease-in-out infinite alternate;
+    animation: neon 2s ease-in-out infinite alternate; }
   .index-intro-display p {
-    font-size: 25px; }
+    font-size: 25px;
+    text-shadow: 0px 5px 15px black; }
+
+@media (min-width: 769px) {
+  .index-intro-display h1 {
+    font-size: 4em; } }
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ee3a43, 0 0 70px #ee3a43, 0 0 80px #ee3a43, 0 0 100px #ee3a43, 0 0 150px #ee3a43; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ee3a43, 0 0 35px #ee3a43, 0 0 40px #ee3a43, 0 0 50px #ee3a43, 0 0 75px #ee3a43; } }
+@keyframes neon {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ee3a43, 0 0 70px #ee3a43, 0 0 80px #ee3a43, 0 0 100px #ee3a43, 0 0 150px #ee3a43; }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ee3a43, 0 0 35px #ee3a43, 0 0 40px #ee3a43, 0 0 50px #ee3a43, 0 0 75px #ee3a43; } }
