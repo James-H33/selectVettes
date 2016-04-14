@@ -161,6 +161,9 @@ ul {
     line-height: 30px; }
   .footer-display h1 {
     font-size: 25px; }
+  .footer-display a {
+    text-decoration: none;
+    color: #161616; }
 
 @media (min-width: 500px) {
   .footer-display {
