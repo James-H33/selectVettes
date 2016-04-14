@@ -1,17 +1,21 @@
 @import '../1-base/var'
 
-html,body
+body
   overflow-x: hidden
   font-family: 'Open Sans', sans-serif
 
+ul
+  list-style: none
+
 .nav-wrapper
-  width: 75%
+  width: 300px
   height: 100vh
   background: $menu-background
   position: fixed
   right: 0
   transform: translateX(100%)
-  transition: all .5s linear
+  transition: all 0.6s ease
+  z-index: 100
 
 .nav-icon
   height: 30px
@@ -21,7 +25,7 @@ html,body
   left: -50px
   cursor: pointer
   transform: translateX(0)
-  transition: all 0.3s linear
+  transition: all 0.3s ease
 
 .nav-icon span
   width: 25px
@@ -29,7 +33,7 @@ html,body
   background: #ccc
   position: absolute
   right: 3px
-  transition: all 0.3s ease
+  transition: all 0.1s ease
 
   &:nth-child(1)
     top: 2px
@@ -61,22 +65,26 @@ html,body
   align-item: center
   justify-content: center
 
-
-  h1
-    font-size: 2em
-    margin-left: 20px
-
   h2
-    font-size: 1.2em
-    margin-left: 20px
+    font-size: 1.5em
 
   h1,h2
     font-weight: 300
+    margin-left: 20px
     padding: 10px 0
 
     &:hover
       color: $vette-red
       text-shadow: 0 0 15px $vette-red
+
+.nav-line
+  width: 265px
+  height: 1px
+  margin: 0 auto
+  background: #bbb
+
+
+
 
 
 // Jquery Classes
@@ -84,19 +92,17 @@ html,body
   transform: translateX(0)
 
 .icon-slide
-  transform: translateX(75vw)
-  transition: 0.3s all .6s ease
+  transform: translateX(300px)
+  transition: 0.1s all ease
 
-@media (min-width: 769px)
-  .icon-slide
-    transform: translateX(40vw)
-    transition: 0.3s all .6s
+.scrollToTop
+  width: 30px
+  height: 30px
+  position: fixed
+  bottom: 50px
+  right: 50px
+  z-index: 100
 
-  .nav-wrapper
-    width: 40%
-
-  .nav-display
-    h1
-      font-size: 3em
-    h2
-      font-size: 2em
+.fa-angle-up
+  color: #fff
+  font-size: 40px
