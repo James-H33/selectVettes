@@ -15,6 +15,7 @@ ul {
   background: #161616;
   position: fixed;
   right: 0;
+  box-shadow: 0 5px 10px black;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   -webkit-transition: all 0.6s ease;
@@ -92,6 +93,12 @@ ul {
   .nav-display.nav-display-active {
     -webkit-transform: translateX(0);
     transform: translateX(0); }
+  .nav-display a {
+    text-decoration: none;
+    color: #ccc; }
+    .nav-display a:hover {
+      color: #ee3a43;
+      text-shadow: 0 0 15px #ee3a43; }
   .nav-display h2 {
     font-size: 1.5em; }
   .nav-display h1, .nav-display h2 {
@@ -385,3 +392,107 @@ ul {
     width: 28.5%;
     padding: 0;
     margin: 1em; } }
+.inventory-intro-wrapper {
+  width: 100%;
+  height: 100vh;
+  background: #f9f9f9;
+  overflow-y: hidden; }
+
+.inventory-intro-display {
+  width: 100%;
+  height: 100%; }
+
+.inventory-intro-numbers {
+  width: 400px;
+  height: 100%;
+  background: #161616;
+  position: relative;
+  display: inline-block; }
+  .inventory-intro-numbers h1 {
+    width: 100%;
+    color: #f9f9f9;
+    font-size: 22px;
+    text-shadow: 0px 5px 10px #000;
+    position: absolute;
+    top: 190px;
+    left: 10px; }
+  .inventory-intro-numbers span {
+    color: #ccc;
+    position: absolute;
+    font-size: 270px;
+    font-weight: bold;
+    margin-top: -60px; }
+  .inventory-intro-numbers p {
+    width: 300px;
+    color: #f9f9f9;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+    line-height: 40px;
+    position: absolute;
+    top: 350px;
+    left: 20px; }
+
+.inventory-intro-cars {
+  width: calc(100% - 410px);
+  height: 100%;
+  position: relative;
+  display: inline-block; }
+  .inventory-intro-cars ul {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    list-style: none; }
+  .inventory-intro-cars li {
+    color: #f9f9f9;
+    width: 100%;
+    height: 25%;
+    font-size: 30px;
+    font-weight: bold;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    -webkit-transition: all 0.8s ease 0.3s;
+    transition: all 0.8s ease 0.3s; }
+    .inventory-intro-cars li:hover {
+      height: 50%;
+      margin-top: -50px; }
+    .inventory-intro-cars li:nth-child(1) {
+      background-image: url("http://selectvettes.com/inventory/65%20vette%20web1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inventory-intro-cars li:nth-child(2) {
+      background-image: url("http://selectvettes.com/inventory/57%20tbirdweb1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inventory-intro-cars li:nth-child(3) {
+      background-image: url("http://selectvettes.com/inventory/66%20442rd%20web1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inventory-intro-cars li:nth-child(4) {
+      background-image: url("http://selectvettes.com/inventory/67%20GTO%20web1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .inventory-intro-cars li img {
+      width: 100%;
+      height: 100%; }
+
+.inventory-intro-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }

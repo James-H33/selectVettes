@@ -1,0 +1,113 @@
+// variables
+@import '../1-base/var'
+
+//***************************************
+//         Inventory Intro
+//***************************************
+
+.inventory-intro-wrapper
+  width: 100%
+  height: 100vh
+  background: #f9f9f9
+  overflow-y: hidden
+
+.inventory-intro-display
+  width: 100%
+  height: 100%
+
+.inventory-intro-numbers
+  width: 400px
+  height: 100%
+  background: $menu-background
+  position: relative
+  display: inline-block
+
+  h1
+    width: 100%
+    color: #f9f9f9
+    font-size: 22px
+    text-shadow: 0px 5px 10px #000
+    position: absolute
+    top: 190px
+    left: 10px
+
+  span
+    color: #ccc
+    position: absolute
+    font-size: 270px
+    font-weight: bold
+    margin-top: -60px
+
+  p
+    width: 300px
+    color: #f9f9f9
+    font-size: 20px
+    font-style: italic
+    letter-spacing: 1px
+    line-height: 40px
+    position: absolute
+    top: 350px
+    left: 20px
+
+.inventory-intro-cars
+  width: calc(100% - 410px)
+  height: 100%
+  position: relative
+  display: inline-block
+
+  ul
+    width: 100%
+    height: 100%
+    position: absolute
+    list-style: none
+
+  li
+    color: #f9f9f9
+    width: 100%
+    height: 25%
+    font-size: 30px
+    font-weight: bold
+    border-top: 2px solid #ccc
+    border-bottom: 2px solid #ccc
+    transition: all 0.8s ease 0.3s
+
+    &:hover
+      height: 50%
+      margin-top: -50px
+
+    &:nth-child(1)
+      background:
+        image: url('http://selectvettes.com/inventory/65%20vette%20web1.jpg')
+        size: cover
+        repeat: no-repeat
+        position: center
+    &:nth-child(2)
+      background:
+        image: url('http://selectvettes.com/inventory/57%20tbirdweb1.jpg')
+        size: cover
+        repeat: no-repeat
+        position: center
+    &:nth-child(3)
+      background:
+        image: url('http://selectvettes.com/inventory/66%20442rd%20web1.jpg')
+        size: cover
+        repeat: no-repeat
+        position: center
+    &:nth-child(4)
+      background:
+        image: url('http://selectvettes.com/inventory/67%20GTO%20web1.jpg')
+        size: cover
+        repeat: no-repeat
+        position: center
+
+    img
+      width: 100%
+      height: 100%
+
+.inventory-intro-overlay
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.5)
+  display: flex
+  align-items: center
+  justify-content: center

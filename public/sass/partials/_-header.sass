@@ -13,6 +13,7 @@ ul
   background: $menu-background
   position: fixed
   right: 0
+  box-shadow: 0 5px 10px black
   transform: translateX(100%)
   transition: all 0.6s ease
   z-index: 1000
@@ -70,6 +71,14 @@ ul
 
   &.nav-display-active
     transform: translateX(0)
+
+  a
+    text-decoration: none
+    color: #ccc
+
+    &:hover
+      color: $vette-red
+      text-shadow: 0 0 15px $vette-red
 
   h2
     font-size: 1.5em
