@@ -16,14 +16,14 @@
   height: 100%
 
 .inventory-intro-numbers
-  width: 400px
+  width: 100%
   height: 100%
   background: $menu-background
   position: relative
   display: inline-block
 
   h1
-    width: 100%
+    width: 90%
     color: #f9f9f9
     font-size: 22px
     text-shadow: 0px 5px 10px #000
@@ -34,7 +34,7 @@
   span
     color: #ccc
     position: absolute
-    font-size: 270px
+    font-size: 300px
     font-weight: bold
     margin-top: -60px
 
@@ -49,11 +49,16 @@
     top: 350px
     left: 20px
 
+@media (min-width: 600px)
+
+  .inventory-intro-numbers
+    width: 400px
+
 .inventory-intro-cars
   width: calc(100% - 410px)
   height: 100%
   position: relative
-  display: inline-block
+  display: none
 
   ul
     width: 100%
@@ -62,14 +67,14 @@
     list-style: none
 
   li
-    color: #f9f9f9
+    color: #ccc
     width: 100%
     height: 25%
     font-size: 30px
     font-weight: bold
     border-top: 2px solid #ccc
     border-bottom: 2px solid #ccc
-    transition: all 0.8s ease 0.3s
+    transition: all 0.8s ease 0.2s
 
     &:hover
       height: 50%
@@ -104,10 +109,101 @@
       width: 100%
       height: 100%
 
+@media (min-width: 500px)
+
+  .inventory-intro-cars
+    display: inline-block
+
 .inventory-intro-overlay
   width: 100%
   height: 100%
-  background: rgba(0, 0, 0, 0.5)
+  background: rgba(0, 0, 0, 0.4)
   display: flex
   align-items: center
   justify-content: center
+
+.inventory-list-wrapper
+  width: 100%
+  height: 100%
+  background: #f9f9f9
+
+.inventory-list-display
+  width: 100%
+  height: 100%
+  padding: 50px 0
+
+.inventory-list-group
+  width: 90%
+  height: 100%
+  max-width: 1080px
+  margin: 50px auto
+  border-top: 1px solid $menu-background
+  border-bottom: 1px solid $menu-background
+
+  li
+    width: 100%
+    height: 100%
+    padding: 20px 0
+    text-align: center
+    list-style: none
+
+.inventory-list-image
+  width: 100%
+  height: 250px
+  text-align: center
+  display: block
+
+  img
+    width: 100%
+    max-width: 300px
+    height: 100%
+    max-height: 270px
+    display: inline-block
+
+@media (min-width: 500px)
+  .inventory-list-image
+    width: 45%
+    display: inline-block
+
+
+.inventory-list-items
+  width: 100%
+  height: 250px
+  color: #707070
+  display: inline-block
+  vertical-align: top
+  text-align: center
+  position: relative
+
+  h2
+    width: 100%
+    padding: 10px 0
+    text-align: center
+
+  button
+    width: 150px
+    height: 35px
+    background: $menu-background
+    border-radius: 4px
+    box-shadow: 0px 5px 10px $menu-background
+    border: none
+    outline: none
+    cursor: pointer
+    position: absolute
+    bottom: 10px
+    left: calc(50% - 75px)
+    transform: translateY(5px)
+    transition: all 0.5s ease
+
+    &:hover
+      transform: translateY(0)
+      box-shadow: 0px 10px 18px $menu-background
+
+    a
+      color: #ccc
+      font-size: 16px
+      text-decoration: none
+
+@media (min-width: 600px)
+  .inventory-list-items
+    width: 45%
