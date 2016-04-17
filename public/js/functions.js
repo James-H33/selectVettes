@@ -20,8 +20,8 @@ $(document).ready(function() {
     }
 
     // Scroll Index headings
-    $('.index-intro-display').css({
-      'transform' : 'translateY(0' + scrollCheck * 0.5 + 'px)'
+    $('.index-intro-display h1, .index-intro-display p, .index-intro-emblem').css({
+      'transform' : 'translateY(0' + scrollCheck * 0.5 + 'px'
     })
 
     });
