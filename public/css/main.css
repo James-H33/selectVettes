@@ -28,6 +28,7 @@ ul {
   top: 10px;
   left: -50px;
   cursor: pointer;
+  z-index: 1000;
   -webkit-transform: translateX(0);
   transform: translateX(0);
   -webkit-transition: all 0.3s ease;
@@ -83,7 +84,14 @@ ul {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  -webkit-transform: translateX(50px);
+  transform: translateX(50px);
+  -webkit-transition: all 0.6s ease 0.3s;
+  transition: all 0.6s ease 0.3s; }
+  .nav-display.nav-display-active {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); }
   .nav-display h2 {
     font-size: 1.5em; }
   .nav-display h1, .nav-display h2 {
