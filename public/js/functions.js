@@ -33,3 +33,23 @@ $(document).ready(function() {
   });
 
 })
+
+
+var h1 = document.querySelector('.inventory-intro-numbers span');
+
+
+function inventoryCount() {
+  var invNum = 30;
+
+  for(var i = 0; i < invNum; i++) {
+    setTimeout(function(){
+      h1.textContent++;
+    }, 100 * (i + 1))
+  }
+}
+
+window.onload = function() {
+  setTimeout(function(){
+    inventoryCount();
+  }, 1000)
+}
