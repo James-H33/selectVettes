@@ -13,4 +13,14 @@ router.get('/inventory', function(req, res) {
   });
 });
 
+router.get('/inventory/:id', function(req, res) {
+  Inventory.findById(req.params.id, function(err, invIdItems) {
+    if(err) {
+      console.log(err);
+    } else {
+      res.render('inventory/inventoryItem', {invItems: invIdItems})
+    }
+  });
+})
+
 module.exports = router;

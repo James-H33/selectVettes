@@ -1,0 +1,21 @@
+<% include ../partials/header %>
+
+<section class="inventoryItem-intro-wrapper">
+  <div class="inventoryItem-intro-display">
+    <figure class="thumbnail">
+      <img src="<%= invItems.image %>" alt=""/>
+        <div class="thumbnail-info">
+          <h3><%= invItems.year %> <%= invItems.make %> <%= invItems.model %></h3>
+          <h3> <%= invItems.color %> </h3>
+        </div>
+        <div class="thumbnail-gal">
+          <img src="<%= invItems.image %>" alt="" />
+          <img src="<%= invItems.image %>" alt="" />
+        </div>
+    </figure>
+  </div>
+</section>
+
+<script type="text/javascript" src="../js/functions.js"></script>
+
+<% include ../partials/footer %>
