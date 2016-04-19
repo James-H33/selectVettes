@@ -13,8 +13,8 @@ var portIP = process.env.IP;
 var inventoryRoutes = require('./routes/inventoryRoutes');
 
 //Mongo Database
-// mongoose.connect('mongodb://retsbud:String33@ds011241.mlab.com:11241/select_vettes');
-mongoose.connect('mongodb://localhost/select_vettes');
+mongoose.connect('mongodb://retsbud:String33@ds011241.mlab.com:11241/select_vettes');
+// mongoose.connect('mongodb://localhost/select_vettes');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'ejs');

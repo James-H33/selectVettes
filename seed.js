@@ -4,7 +4,7 @@ var Inventory = require('./models/inventoryModel');
 
 var data = [
   {
-    image: 'http://selectvettes.com/inventory/67%20GTO%20web1.jpg',
+    image: ['http://selectvettes.com/inventory/67%20GTO%20web1.jpg', 'http://selectvettes.com/inventory/67%20GTO%20web2.png','http://selectvettes.com/inventory/67%20GT0%20web3.jpg'],
     year: '1967',
     make: 'Pontiac',
     model: 'GTO',
@@ -12,7 +12,7 @@ var data = [
     price: 'Contact Us'
   },
   {
-    image: 'http://selectvettes.com/inventory/65%20vette%20web1.jpg',
+    image: ['http://selectvettes.com/inventory/65%20vette%20web1.jpg','http://selectvettes.com/inventory/65%20vette%20web2.jpg', 'http://selectvettes.com/inventory/65%20vette%20web3.jpg'],
     year: '1965',
     make: 'Chevrolet',
     model: 'Corvette',
@@ -20,7 +20,7 @@ var data = [
     price: 'Contact Us'
   },
   {
-    image: 'http://selectvettes.com/inventory/57%20tbirdweb1.jpg',
+    image: ['http://selectvettes.com/inventory/57%20tbirdweb1.jpg', 'http://selectvettes.com/inventory/57%20tbirdweb2.jpg', 'http://selectvettes.com/inventory/57%20tbirdweb3.jpg'],
     year: '1957',
     make: 'Ford',
     model: 'Thunderbird',
