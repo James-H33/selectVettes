@@ -7,47 +7,57 @@ $(document).ready(function() {
     $('.nav-display').toggleClass('nav-display-active');
   })
 
-  //Check to see if the window is top if not then display button
+
   $(window).scroll(function(){
+
 
     // Var for calculating window distance from top
     var scrollCheck = $(window).scrollTop();
 
-    if ($(this).scrollTop() > 300) {
+    // "this" refers to the window
+    if ($(this).scrollTop() > 400) {
       $('.scrollToTop').fadeIn();
     } else {
       $('.scrollToTop').fadeOut();
     }
 
-    // Scroll Index headings
+
+
+    // Scroll Index headings -- subtle movement down as user scrolls
     $('.index-intro-display h1, .index-intro-display p, .index-intro-emblem').css({
       'transform' : 'translateY(0' + scrollCheck * 0.5 + 'px'
     })
 
+  }); // Document.read ENDS
+
+
+
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+      $('html, body').animate({scrollTop : 0},1000);
+      return false;
     });
 
-  //Click event to scroll to top
-  $('.scrollToTop').click(function(){
-    $('html, body').animate({scrollTop : 0},1000);
-    return false;
-  });
 
 })
 
-
-var h1 = document.querySelector('.inventory-intro-numbers span');
+// Couldn't figure out how to do this via jquery. So, vanilla js to the rescue!
+// Visual counter for the number of cars in the inventory
+var span = document.querySelector('.inventory-intro-numbers span');
 
 
 function inventoryCount() {
   var invNum = 30;
 
+// Adds one and displays that until 30 is reached
   for(var i = 0; i < invNum; i++) {
     setTimeout(function(){
-      h1.textContent++;
+      span.textContent++;
     }, 100 * (i + 1))
   }
 }
 
+// 1s after window loads -- This way the user doesn't see start midway through animation.
 window.onload = function() {
   setTimeout(function(){
     inventoryCount();
