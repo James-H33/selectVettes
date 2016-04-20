@@ -8,38 +8,48 @@ $(document).ready(function() {
   })
 
 
+
+  // InventoryItem Page Photo Swap on Click
+
+  
+
+
+
+
+
   $(window).scroll(function(){
 
+      // Var for calculating window distance from top
+      var scrollCheck = $(window).scrollTop();
 
-    // Var for calculating window distance from top
-    var scrollCheck = $(window).scrollTop();
-
-    // "this" refers to the window
-    if ($(this).scrollTop() > 400) {
-      $('.scrollToTop').fadeIn();
-    } else {
-      $('.scrollToTop').fadeOut();
-    }
-
-
-
-    // Scroll Index headings -- subtle movement down as user scrolls
-    $('.index-intro-display h1, .index-intro-display p, .index-intro-emblem').css({
-      'transform' : 'translateY(0' + scrollCheck * 0.5 + 'px'
-    })
-
-  }); // Document.read ENDS
+      // "this" refers to the window
+      if ($(this).scrollTop() > 400) {
+        $('.scrollToTop').fadeIn();
+      } else {
+        $('.scrollToTop').fadeOut();
+      }
 
 
 
-    //Click event to scroll to top
-    $('.scrollToTop').click(function(){
-      $('html, body').animate({scrollTop : 0},1000);
-      return false;
-    });
+      // Scroll Index headings -- subtle movement down as user scrolls
+      $('.index-intro-display h1, .index-intro-display p, .index-intro-emblem').css({
+        'transform' : 'translateY(0' + scrollCheck * 0.5 + 'px'
+      })
+
+  }); // Window.scroll ENDS
 
 
-})
+
+  //Click event to scroll to top
+  $('.scrollToTop').click(function(){
+    $('html, body').animate({scrollTop : 0},1000);
+    return false;
+  });
+
+
+}) // document.ready ENDS
+
+
 
 // Couldn't figure out how to do this via jquery. So, vanilla js to the rescue!
 // Visual counter for the number of cars in the inventory

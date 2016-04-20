@@ -3,14 +3,20 @@
 <section class="inventoryItem-intro-wrapper">
   <div class="inventoryItem-intro-display">
     <figure class="thumbnail">
-      <img src="<%= invItems.image %>" alt=""/>
-        <div class="thumbnail-info">
-          <h3><%= invItems.year %> <%= invItems.make %> <%= invItems.model %></h3>
-          <h3> <%= invItems.color %> </h3>
-        </div>
+      <img src="<%= invItems.image[0] %>" alt=""/>
         <div class="thumbnail-gal">
-          <img src="<%= invItems.image %>" alt="" />
-          <img src="<%= invItems.image %>" alt="" />
+          <img src="<%= invItems.image[1] %>" alt="" />
+          <img src="<%= invItems.image[2] %>" alt="" />
+        </div>
+
+        <div class="thumbnail-info">
+          <h4><%= invItems.year %> <%= invItems.make %> <%= invItems.model %></h4>
+          <h4> <%= invItems.color %> </h4>
+            <div class="inventoryItem-contact">
+              <hr>
+              <p> Contact us today for more information.</p>
+              <button type="button" href="/contact">Contact Us</button>
+            </div>
         </div>
     </figure>
   </div>
