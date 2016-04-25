@@ -667,7 +667,8 @@ ul {
   .thumbnail-gal img {
     width: 50%;
     height: 100%;
-    float: left; }
+    float: left;
+    cursor: pointer; }
 
 @media (min-width: 430px) {
   .thumbnail-gal {

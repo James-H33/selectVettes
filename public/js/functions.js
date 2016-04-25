@@ -11,7 +11,7 @@ $(document).ready(function() {
 
   // InventoryItem Page Photo Swap on Click
 
-  
+
 
 
 
@@ -72,4 +72,28 @@ window.onload = function() {
   setTimeout(function(){
     inventoryCount();
   }, 1000)
+}
+
+// Picture switch
+var thumbImg = document.querySelectorAll('.thumbnail-gal img');
+var largeImg = document.querySelector('.thumbnail img');
+var imgSrc;
+var img;
+
+// Loops through and grabs src of gallery images to be switched
+for (var i = 0; i < thumbImg.length; i++) {
+    thumbImg[i].addEventListener('click', function(){
+      img = this;
+      imgSrc = this.getAttribute('src');
+      imageClick();
+    });
+}
+
+function imageClick() {
+  // Save large img before switch
+  var lgSrc = largeImg.getAttribute('src')
+  largeImg.setAttribute('src', imgSrc);
+  // Switches what was the large img the imgSrc's location
+  img.setAttribute('src', lgSrc);
+
 }

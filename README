@@ -4,3 +4,9 @@ SelectVettes
 
 Server hosted Heroku
 Database hosted on mlab
+
+
+Issues
+  -- scroll to top functions animation is very choppy on mobile
+  -- Spacing between navigation hr and nav links needs changing
+  --
